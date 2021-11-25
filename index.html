@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Markdown and Code with Reveal</title>
+	<!-- Style and theme selection !-->
+	<link rel="stylesheet" href="./css/reveal.css" />
+	<link rel="stylesheet" href="./css/theme/white.css" />
+	<!-- Code Syntax Highlighting Stylesheet -->
+	<link rel="stylesheet" href="./lib/css/zenburn.css" />
+</head>
+
+<body>
+	<div id="timer"></div>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-markdown>
+				<textarea data-template>
+					<img src="https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png" alt="tailwindcss" style="width:300px;"/>
+					1. Why UI Frameworks?
+					2. Limitations
+					3. Future of UI Frameworks
+					4. More about tailwindcss
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					## Why UI Frameworks?
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					<img src="https://i.pinimg.com/originals/07/b9/23/07b9238bb309257ae0c1b08e8fa184dd.gif" />
+            </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Life becomes easy, How ?
+					* Reduces Development Effort
+					* Mutiple browsers support
+					* Theming	
+					* Out-of-box UI components	
+					* Utilities	
+					* Customization friendly		
+					* Covers majority of the test cases	
+					* Reliable
+					* Maintaining consistent UI designs	
+					* Mobilefirst approach								
+            </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Maintaining consistent UI
+
+					```
+					<div class="d-grid gap-3">
+						<div class="p-2 bg-light border">Grid item 1</div>
+						<div class="p-2 bg-light border">Grid item 2</div>
+						<div class="p-2 bg-light border">Grid item 3</div>
+					</div>
+
+					<div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+						<div class="h-25 d-inline-block">Height 25%</div>
+						<div class="h-50 d-inline-block">Height 50%</div>
+						<div class="h-75 d-inline-block">Height 75%</div>
+						<div class="h-100 d-inline-block">Height 100%</div>
+						<div class="h-auto d-inline-block">Height auto</div>
+					</div>
+					```
+		        </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Mobilefirst approach
+					<img src="http://blog.finessse.digital/wp-content/uploads/2018/09/mobile-first-design.png" />
+            </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					<img src="https://i.pinimg.com/originals/d1/7e/a3/d17ea3ea4788f8f31733d4de3716e20f.gif" />
+            </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					## Limitations
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Heavy lifting
+					<img src="https://cdn.dribbble.com/users/2300748/screenshots/4644522/weight-lifting.gif" />
+            	</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					<img src="./images/images1.png" alt="stats"/>
+            	</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					<img src="./images/images3.png" alt="stats"/>
+            	</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					<img src="./images/images2.png" alt="stats"/>
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Missing low level utilities
+					Example: Transforms, states of elements (hover, active)
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Not completely modular
+					```
+					<div class="flex-auto flex space-x-3">
+						<button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+						<button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+					</div>
+					<a class="flex items-center justify-center px-8 py-3 font-medium rounded-md text-white bg-green-700 shadow uppercase hover:bg-green-800 hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none focus:bg-green-800 focus:shadow-lg active:bg-green-900" href="#">See the collection</a>
+					<a class="flex items-center justify-center px-8 py-3 lg:ml-4 mt-2.5 lg:mt-0 font-medium rounded-md text-green-700 bg-white shadow uppercase hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none focus:shadow-lg" href="#" >Learn more</a>					  
+					```
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					## Future of UI Frameworks
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Think about dependency direction
+					* CSS that depends on HTML
+					* HTML that depends on CSS
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### CSS that depends on HTML
+					Naming your classes based on your content (like .author-bio) treats your HTML as a dependency of your CSS
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### HTML that depends on CSS
+					```
+					<div class="card" style="width: 18rem;">
+						<img src="..." class="card-img-top" alt="...">
+						<div class="card-body">
+						  <h5 class="card-title">Card title</h5>
+						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						  <a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+					```
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					```
+					$utilities: (
+						"opacity": (
+						  property: opacity,
+						  class: opacity,
+						  state: hover,
+						  values: (
+							0: 0,
+							25: .25,
+							50: .5,
+							75: .75,
+							100: 1,
+						  )
+						)
+					  );
+					```
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					## More about tailwindcss
+            	</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Utility-First Approach
+					<img  class="animated" src="https://scotch-res.cloudinary.com/image/upload/w_auto,q_auto:good,f_auto/v1582133714/rr3qowef32iuumurfjb1.gif"  alt="Utility-First Approach" />
+            </textarea>
+			</section>
+
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Extracting component classes
+
+					```
+					<button class="btn-indigo">
+						Click me
+					  </button>
+					  
+					  <style>
+						.btn-indigo {
+						  @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+						}
+					  </style>
+					```
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Tiny in Production
+					<img src="./images/tiny.jpeg" class="animated" alt="tiny in production" />
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### IntelliSense extension for VS Code
+					<img src="./images/animation.gif" class="animated" alt="IntelliSense extension for VS Code" />
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Checkout more on 
+					<a href="https://tailwindcss.com/">https://tailwindcss.com/</a>
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					##### Sources
+					<img src="./images/revealjs.png" class="logo mw" alt="JS FW" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" class="logo" alt="logo" />
+					<img src="https://1000logos.net/wp-content/uploads/2020/11/Behance-logo.jpg" class="logo" alt="logo" />
+					<img src="https://tailwindcss.com/_next/static/media/twitter-square.daf77586b35e90319725e742f6e069f9.jpg" class="logo" alt="logo" />
+        		</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					<img src="http://pa1.narvii.com/6630/adcc92b53e0d058a409860b8e6574b0c4bc8523d_00.gif" class="thankyouimage" alt="Hats off" />
+        		</textarea>
+			</section>
+		</div>
+		<!-- End of slide section -->
+	</div>
+	<!-- The first of these scripts helps reveal load the plugin scripts !-->
+	<script src="./lib/js/head.min.js"></script>
+	<script src="./js/reveal.js"></script>
+	<script src="./js/app_script.js"></script>
+</body>
+
+</html>

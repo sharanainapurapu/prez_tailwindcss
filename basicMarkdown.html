@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic Markdown with Reveal</title>
+	<!-- Style and theme selection !-->
+	<link rel="stylesheet" href="./css/reveal.css">
+	<link rel="stylesheet" href="./css/theme/white.css">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				<textarea data-template>
+## How to Use Reveal.js
+
+1. They don't seem to have instructions for how to use the features...
+2. They do give the code for the [demo](https://github.com/hakimel/reveal.js/blob/master/demo.html)
+3. I guess we can use that!
+                    </textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+## To Dos:
+
+1. Show some examples of what headings look like
+2. Provide simple examples of lists and such in HTML
+3. Examples with images
+4. Create examples of code highlighting in HTML and Markdown
+5. Test it how it is working. (Ignore statement) 
+                    </textarea>
+			</section>
+
+		</div>
+	</div>
+	<!-- The first of these scripts helps reveal load the plugin scripts !-->
+	<script src="./lib/js/head.min.js"></script>
+	<script src="./js/reveal.js"></script>
+	<script>
+		/* You can specify Reveal options below. */
+		Reveal.initialize(
+			{
+				dependencies: [
+					{ src: './plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+					{ src: './plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				]
+			}
+		);
+	</script>
+</body>
+
+</html>
